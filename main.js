@@ -11,7 +11,6 @@ const playAgain = document.querySelector(".play-again");
 
 //variables
 let SECRRET_NUMBER = Math.trunc(Math.random() * 100 + 1);
-console.log(SECRRET_NUMBER);
 let SCORE = 100;
 let HIGH_SCORE = 0;
 
@@ -60,7 +59,6 @@ check.addEventListener("click", function () {
 playAgain.addEventListener("click", function () {
   SCORE = 100;
   SECRRET_NUMBER = Math.trunc(Math.random() * 100 + 1);
-  console.log(SECRRET_NUMBER);
 
   displayGuessingText("Start Guessing!");
   document.body.style.backgroundColor = "#222";
