@@ -10,8 +10,8 @@ const highScore = document.querySelector(".high-score");
 const playAgain = document.querySelector(".play-again");
 
 //variables
-let SECRRET_NUMBER = Math.trunc(Math.random() * 20 + 1);
-let SCORE = 20;
+let SECRRET_NUMBER = Math.trunc(Math.random() * 100 + 1);
+let SCORE = 100;
 let HIGH_SCORE = 0;
 
 //display text
@@ -57,8 +57,8 @@ check.addEventListener("click", function () {
 
 //play again
 playAgain.addEventListener("click", function () {
-  SCORE = 20;
-  SECRRET_NUMBER = Math.trunc(Math.random() * 20 + 1);
+  SCORE = 100;
+  SECRRET_NUMBER = Math.trunc(Math.random() * 100 + 1);
 
   displayGuessingText("Start Guessing!");
   document.body.style.backgroundColor = "#222";
